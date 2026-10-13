@@ -6,7 +6,7 @@ Add one line to docs/rovara-e2e/fork.md saying the file was followed up by the r
 
 ## Success criteria
 
-- [ ] docs/rovara-e2e/fork.md has a second line saying it was followed up by the rovara loop.
+- [x] docs/rovara-e2e/fork.md has a second line saying it was followed up by the rovara loop. — Evidence: `sed -n 2p docs/rovara-e2e/fork.md` prints `Followed up by the rovara loop.`; `wc -l` shows 2 lines; `git diff 0c4f7581 -- docs/rovara-e2e/fork.md` shows only that one added line (docs/rovara-e2e/fork.md:2).
 
 ## Approach
 
